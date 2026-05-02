@@ -1,0 +1,220 @@
+:root{
+    --btn-active: var(--green);
+}
+.navbar{
+    background-color: var(--green-light);
+}
+.navbar-brand{
+    color: var(--green);
+    font-weight: bold;
+}
+.nav-link{
+    color: var(--green);
+    font-size: 0.5 rem;
+}
+body{
+    background-color: var(--gray-lighter);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 85vh;
+    gap: 20px;
+}
+.left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right{
+    width: 50%;
+    max-height: 80vh;
+}
+
+.monedas{
+    background-color: white;
+    border-radius: 10px;
+    width: 25vh;
+    height: 5vh;
+    padding-top: 0.6vh;
+    padding-left: 10px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: var(--green);
+}
+
+#monedas_title{
+    color: color-mix(in srgb, var(--orange) 70%, black);
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+.duck{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.duck_container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 40vh;
+    width: 60vh;
+
+    background-image: url("../assets/circle.svg");
+    background-size: calc(100%/6) calc(100%/4); 
+    background-repeat: repeat;
+}
+
+.duck_info{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#duck_name{
+    color: var(--green);
+    font-weight: bold;
+}
+#duck_description{
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn_menu{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: var(--green);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.menu:has(.btn_menu.inactive:hover) .btn_menu.active {
+    background-color: transparent;
+    color: var(--green);
+}
+
+.btn_menu.active {
+    background-color: var(--green);
+    color: white;
+}
+
+.btn_menu.inactive:hover {
+    background-color: var(--green);
+    color: white;
+}
+
+.store_title{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.store_title_text{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 9px;
+}
+.store_title_text img{
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    font-size: 0.6em;
+    color: var(--gray);
+    align-self:last baseline;
+}
+
+.scrollspy-example-2 {
+    position: relative;
+    height: 90%;
+    overflow: auto;
+    scrollbar-color: var(--green-light) transparent;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3 - 20px);
+    height: fit-content;
+    justify-content: center;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selected{
+    border-color: var(--green);
+}
+.card-title{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.owned{
+    color: var(--green-light)
+}
+.invisible{
+    display: none;
+    height: 0;
+}
+.buy{
+    border: none;
+    background-color: color-mix(in srgb, var(--orange) 30%, transparent);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+}
+.buy img{
+    width: 16px;
+    height: 16px;
+    align-self: center;
+}

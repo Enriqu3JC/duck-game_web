@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Game - Level</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/level.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img width="30" height="30" class="d-inline-block align-text-top" id="logo">
+        Vector Quest
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="./profile.html">
+                <img width="24" height="24" id="profile-icon">
+                Perfil
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./menu.html">
+                <img width="24" height="24" id="level-icon">
+                Niveles
+            </a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="./store.html">
+                <img width="24" height="24" id="store-icon">
+                Tienda
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./store.html">
+                <img width="24" height="24" id="personalize-icon">
+                Personalizar
+            </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="level-window">
+
+        <div class="game-block">
+            <div class="scene-container">
+                <img src="../assets/level_bg.png" class="bg-img">
+            </div>
+        </div>
+
+        <div class="level-controls">
+            <div class="vector-input">
+                <span class="bracket">[ ]</span>
+                <span class="bracket">[ ]</span>
+                <span class="bracket">[ ]</span>
+            </div>
+
+            <div class="action">
+                <input type="checkbox" id="bag-toggle" class="bag-toggle">
+                <div class="bag-box">
+                    <label for="bag-toggle" class="btn-accion btn-dark">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </label>
+
+                    <div class="bag-popup">
+                        <div class="bag-title">Mochila</div>
+                        <div class="bag-letters">
+                            <div class="bag-letter" draggable="true">A</div>
+                            <div class="bag-letter" draggable="true">B</div>
+                            <div class="bag-letter" draggable="true">C</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-accion"><i class="fa-solid fa-circle"></i></button>
+                <button class="btn-accion"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn-accion"><i class="fa-solid fa-xmark"></i></button>
+                <button class="btn-accion btn-success"><i class="fa-solid fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var draggedLetter = "";
+        var gameWindow = document.querySelector(".level-window");
+        var letters = document.querySelectorAll(".bag-letter");
+
+        letters.forEach(function(letter) {
+            letter.addEventListener("dragstart", function(event) {
+                draggedLetter = letter.textContent;
+                event.dataTransfer.setData("text/plain", draggedLetter);
+            });
+        });
+
+        gameWindow.addEventListener("dragover", function(event) {
+            event.preventDefault();
+        });
+
+        gameWindow.addEventListener("drop", function(event) {
+            event.preventDefault();
+
+            var rect = gameWindow.getBoundingClientRect();
+            var newLetter = document.createElement("div");
+            newLetter.className = "dropped-letter";
+            newLetter.textContent = draggedLetter;
+            newLetter.style.left = (event.clientX - rect.left - 18) + "px";
+            newLetter.style.top = (event.clientY - rect.top - 18) + "px";
+
+            gameWindow.appendChild(newLetter);
+        });
+    </script>
+</body>
+</html>

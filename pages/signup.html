@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Game | Crear cuenta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="page-overlay">
+        <main class="auth-window">
+            <div class="form-shell">
+                <div class="form-heading">
+                    <p class="eyebrow">Registro</p>
+                    <h1>Crea tu cuenta</h1>
+                    <p class="form-subtitle">Completa tus datos para comenzar a jugar y aprender.</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="form-grid">
+                        <div class="field-group">
+                            <label for="signup-name">Nombre completo</label>
+                            <div class="input-wrap">
+                                <input id="signup-name" type="text" name="name" placeholder="Octavio Loyo" autocomplete="name" required>
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="signup-email">Correo electrónico</label>
+                            <div class="input-wrap">
+                                <input id="signup-email" type="email" name="email" placeholder="tuusuario@ejemplo.com" autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="field-group full-width">
+                            <label for="signup-password">Contraseña</label>
+                            <div class="input-wrap">
+                                <input id="signup-password" type="password" name="password" placeholder="Crea una contraseña" autocomplete="new-password" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="signup-confirm-password">Confirmar contraseña</label>
+                        <div class="input-wrap">
+                            <input id="signup-confirm-password" type="password" name="confirm-password" placeholder="Repite tu contraseña" autocomplete="new-password" required>
+                        </div>
+                    </div>
+
+                    <label class="checkbox-row" for="accept-terms">
+                        <input id="accept-terms" type="checkbox" name="terms" required>
+                        <span>Acepto los términos de uso y la política de privacidad.</span>
+                    </label>
+
+                    <button class="primary-action" type="submit">Crear cuenta</button>
+                </form>
+
+                <p class="form-switch">
+                    ¿Ya tienes cuenta?
+                    <a href="../index.html">Inicia sesión</a>
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

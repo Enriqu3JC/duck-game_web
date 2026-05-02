@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img width="30" height="30" class="d-inline-block align-text-top" id="logo">
+        Vector Quest
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="./profile.html">
+                <img width="24" height="24" id="profile-icon">
+                Perfil
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./menu.html">
+                <img width="24" height="24" id="level-icon">
+                Niveles
+            </a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="./store.html">
+                <img width="24" height="24" id="store-icon">
+                Tienda
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./store.html">
+                <img width="24" height="24" id="personalize-icon">
+                Personalizar
+            </a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+    </nav>
+    
+    <div class = "content">
+        <div class="left">
+            <div class="monedas">
+                <p id="monedas_title">MONEDAS: </p>
+                <span id="monedas_value"> $1250</span>
+                <img src="../assets/coin.svg"  width="24" height="24">
+            </div>
+
+            <div class="duck">
+                <img src="../assets/ducky.svg" alt="Logo" class="d-inline-block align-text-top" width="100%" height="100%">
+            </div>
+
+            <div class="menu">
+                <button class="btn_menu">
+                    <img src="../assets/personalize.svg" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                    ARMARIO
+                </button>
+                <button class="btn_menu">
+                    <img src="../assets/store.svg" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                    TIENDA
+                </button>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="card">
+            <div class="card-body">
+                <div class="user_info-title">
+                <h5 class="card-title">
+                    <span id="user_name">Nombre de usuario</span>
+                </h5>
+                <a href="#" class="btn btn-primary">
+                    <img src="../assets/close.svg" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                    Cerrar sesión
+                </a>
+                </div>
+                
+                <p><span id="user_type">Estudiante</span></p>
+                <div class = "progress_section">
+                    <div class="progress_header">
+                    <div>
+                        <p id="progress_title"> PROGRESO GENERAL</p>
+                        <p>
+                            <span id="progress-value">0</span>
+                            /
+                            <span id="progress-max">15</span>
+                        </p>
+
+                    </div>
+                    <div class = "stars">
+                        <div>
+                            <span id="stars-num">23</span>
+                        </div>
+                        <div>
+                            <img src="../assets/star.svg" alt="Logo" width="20" height="20" class="d-inline-block">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <div class="card down">
+            <div class="card-body">
+                <div class="temas_aprendidos-header">
+                    <div id="temas_aprendidos-title">
+                    <img src="../assets/star.svg" alt="Logo" width="20" height="20" class="d-inline-block align-text-top">
+                    <p>Temas aprendidos</p>
+                    </div>
+                    <div id="temas_completados">
+                    <span>
+                        6
+                    </span>
+                    <p>
+                        Completados
+                    </p>
+                    </div>
+                </div>
+                
+                <div data-bs-spy="scroll" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+
+                    <div class="tema">
+                        <div class="tema_left">
+                            <div class="tema_number">1</div>
+                            <div class="tema_name">Suma de vectores</div>
+                        </div>
+                        <div class="tema_right">
+                            <div class="tema_stars">
+                                <div>
+                                    <span>9</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/star.svg" alt="Logo" width="16" height="16" class="d-inline-block align-text-top">
+                                </div>
+                            </div>
+                            <button class="go_to">></button>
+                        </div>
+                    </div>
+
+                    <div class="tema">
+                        <div class="tema_left">
+                            <div class="tema_number">2</div>
+                            <div class="tema_name">Multiplicación de vectores</div>
+                        </div>
+                        <div class="tema_right">
+                            <div class="tema_stars">
+                                <div>
+                                    <span>10</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/star.svg" alt="Logo" width="16" height="16" class="d-inline-block align-text-top">
+                                </div>
+                            </div>
+                            <button class="go_to">></button>
+                        </div>
+                    </div>
+
+                    <div class="tema">
+                        <div class="tema_left">
+                            <div class="tema_number">1</div>
+                            <div class="tema_name">Suma de vectores</div>
+                        </div>
+                        <div class="tema_right">
+                            <div class="tema_stars">
+                                <div>
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <img src="../assets/star.svg" alt="Logo" width="16" height="16" class="d-inline-block align-text-top">
+                                </div>
+                            </div>
+                            <button class="go_to">></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

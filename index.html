@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Game | Iniciar sesión</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="page-overlay">
+        <main class="auth-window">
+            <div class="form-shell">
+                <div class="form-heading">
+                    <p class="eyebrow">Acceso</p>
+                    <h1>Inicia sesión</h1>
+                    <p class="form-subtitle">Ingresa con tu correo para continuar tu progreso.</p>
+                </div>
+
+                <form class="auth-form" action="./pages/menu.html">
+                    <div class="field-group">
+                        <label for="login-email">Correo electrónico</label>
+                        <div class="input-wrap">
+                            <input id="login-email" type="email" name="email" placeholder="tuusuario@ejemplo.com" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="login-password">Contraseña</label>
+                        <div class="input-wrap">
+                            <input id="login-password" type="password" name="password" placeholder="Ingresa tu contraseña" autocomplete="current-password" required>
+                        </div>
+                    </div>
+
+                    <button class="primary-action" id= "button" type="submit">Iniciar sesión</button>
+                </form>
+
+                <button class="google-action" type="button">
+                    <span>Iniciar sesión con Google</span>
+                </button>
+
+                <p class="form-switch">
+                    ¿Aún no tienes cuenta?
+                    <a href="./pages/signup.html">Crear perfil</a>
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

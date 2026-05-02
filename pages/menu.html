@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Roadmap - Horizontal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img width="30" height="30" class="d-inline-block align-text-top" id="logo">
+        Vector Quest
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="./profile.html">
+                <img width="24" height="24" id="profile-icon">
+                Perfil
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./menu.html">
+                <img width="24" height="24" id="level-icon">
+                Niveles
+            </a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="./store.html">
+                <img width="24" height="24" id="store-icon">
+                Tienda
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./store.html">
+                <img width="24" height="24" id="personalize-icon">
+                Personalizar
+            </a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+    </nav>
+
+
+
+        <div class="game-window">
+
+            <div class="header-pill-container left">
+                <div class="status-pill coins">
+                    <i class="fa-solid fa-coins"></i>
+                    <span>1,250</span>
+                </div>
+            </div>
+
+            <div class="header-pill-container right">
+                <div class="status-pill stars-total">
+                    <i class="fa-solid fa-star"></i>
+                    <span>7 / 24</span>
+                </div>
+            </div>
+
+            <div class="scroll-container">
+                <div class="map-content">
+
+                    <svg class="connectors" viewBox="0 0 1600 100" preserveAspectRatio="none">
+                        <path class="level-path" d="M100,50 Q200,20 300,50 T500,50 T700,50 T900,50 T1100,50 T1300,50 T1500,50" />
+                    </svg>
+
+                    <div class="level-node completed" style="left: 100px; top: 50%;" onclick="window.location.href='../pages/level.html';">
+                        <span class="lvl-num">1</span>
+                        <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="level-node completed" style="left: 300px; top: 43%;" onclick="window.location.href='../pages/level.html';">
+                        <span class="lvl-num">2</span>
+                        <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="level-node completed" style="left: 500px; top: 63%;" onclick="window.location.href='../pages/level.html';">
+                        <span class="lvl-num">3</span>
+                        <div class="inner-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="level-node current" style="left: 700px; top: 37%;" onclick="window.location.href='../pages/level.html';">
+                        <span class="lvl-num">4</span>
+                        <div class="inner-stars">
+                            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="level-node locked" style="left: 900px; top: 63%;">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="lvl-num">5</span>
+                    </div>
+
+                    <div class="level-node locked" style="left: 1100px; top: 34%;">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="lvl-num">6</span>
+                    </div>
+
+                    <div class="level-node locked" style="left: 1300px; top: 60%;">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="lvl-num">7</span>
+                    </div>
+
+                    <div class="level-node locked" style="left: 1500px; top: 40%;">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="lvl-num">8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

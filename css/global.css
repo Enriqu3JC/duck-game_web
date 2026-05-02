@@ -1,0 +1,50 @@
+:root {
+    --green: #1B512D;
+    --orange: #FB8500;
+    --gold: #F7DBA7;
+    --green-light: #ADC178;
+    --gray-light: #D1D1D1;
+    --gray: #7A7A7A;
+    --gray-lighter: #ebeae6;
+    --white: rgba(255, 255, 255, 0.85);
+
+
+    --logo: url('../assets/logo.svg');
+    --profile: url('../assets/profile.svg');
+    --levels: url('../assets/levels.svg');
+    --store: url('../assets/store.svg');
+    --personalize: url('../assets/personalize.svg');
+}
+
+.navbar{
+    background-color: var(--green-light);
+}
+.navbar-brand{
+    color: var(--green);
+    font-weight: bold;
+}
+.nav-link{
+    color: var(--green);
+    font-size: 0.5 rem;
+}
+
+#logo{
+    content: var(--logo);
+    display: inline-block;
+}
+#profile-icon{
+    content: var(--profile);
+    height: 20px;
+}
+#level-icon{
+    content: var(--levels);
+}
+#store-icon{
+    content: var(--store);
+    height: 20px;
+}
+#personalize-icon{
+    content: var(--personalize);
+    height: 24px;
+    width: 24px;
+}
